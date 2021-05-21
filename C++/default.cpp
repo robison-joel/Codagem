@@ -1,36 +1,26 @@
 ///////////////////////////////////////////////////////////////////////////////////////
 
-// NOME...: Róbison Joel Guimarães Simon
-// DATA...: 16/05/2021
+// NOME...: Robison Joel G. Simon
+// QUANDO.: 21/05/2021 - 
 // ASSUNTO: 
 
 //////////////////////////////////////////////////////////////////////////////////////
 
 
-#include < iostream >
-
+#include <iostream>
 using namespace std;
 
 int main()
 
 {
-	
-	int numeris, resto;
+	int lado1, lado2, lado3;
 
-    cout << "Insira o numero: ";
 
-    cin >> numeris;
 
-    resto=numeris%2
+    if (lado1 = lado2 && lado3 = lado1) 
 
-    if(rest=0)
-    {
-        cout << "Esse numero é par!"
-    }
-	
-    else
+    cout << "Eis um triangulo Equilatero!";
 
-    {
-        cout << "Esse numero é impar!"
-    }
+    else if (lado1)
 }
+
