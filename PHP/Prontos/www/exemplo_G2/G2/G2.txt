@@ -1,0 +1,33 @@
+CREATE TABLE turma (
+  codigo BIGINT NOT NULL AUTO_INCREMENT,
+  nometurma VARCHAR(20) NULL,
+  codigoprofessor BIGINT NULL,
+  nomeprofessor VARCHAR(30) NULL,
+  PRIMARY KEY(codigo)
+);
+
+
+CREATE TABLE pessoa (
+  codigo BIGINT NOT NULL AUTO_INCREMENT,
+  usuario VARCHAR(20) NULL,
+  senha VARCHAR(10) NULL,
+  tipopessoa BIGINT NULL,
+  nome VARCHAR(30) NULL,
+  endereco VARCHAR(40) NULL,
+  bairro VARCHAR(25) NULL,
+  cidade VARCHAR(25) NULL,
+  estado VARCHAR(2) NULL,
+  email VARCHAR(100) NULL,
+  foto VARCHAR(250) NULL,
+  PRIMARY KEY(codigo)
+);
+
+CREATE TABLE alunosdaturma (
+  codigoalunoturma BIGINT NOT NULL AUTO_INCREMENT,
+  codigoaluno BIGINT NULL,
+  nomealuno VARCHAR(30) NULL,
+  g1 FLOAT NULL,
+  g2 FLOAT NULL,
+  final FLOAT NULL,
+  PRIMARY KEY(codigoalunoturma)
+);
