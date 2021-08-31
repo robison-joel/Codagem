@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&family=Russo+One&family=Swanky+and+Moo+Moo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@font-face {
+    font-family: 'roots';
+    src: url('../fonts/roots/Roots.ttf') format('truetype');
+}
+
+
+/* Viewport */
+
+@viewport {
+    zoom: 1.0;
+    width: device-width;
+}
+
+
+/* CLASSES SUPERIORES */
+
+:root {
+    --fonte-russo: 'Russo One', sans-serif;
+    --fonte-ubuntu: 'Ubuntu', sans-serif;
+    --font-kalam: 'Kalam', cursive;
+    --font-moo: 'Swanky and Moo Moo', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #444;
+    color: #FFF;
+    font-size: 1.5em;
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: "Open Sans", sans-serif;
+    z-index: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#rel {
+    font-size: 1.5em;
+    width: 100%;
+}

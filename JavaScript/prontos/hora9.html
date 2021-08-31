@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <title>Title</title>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Relógio - JavasCript</title>
+
+    <link rel="stylesheet" href="style-java.css">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- HTML -->
+
+    <div class="container-fluid" id="id_relogio">
+
+        <p id="rel"></p>
+
+        <script>
+            function relogio() {
+
+                // declaração de variáveis
+                var data = new Date();
+
+                /*
+                var data_dia = data.getDate();
+
+                var mes = data.getMount();
+
+                var ano = data.getFullYear();
+                */
+
+                var dia_semana = data.getDay();
+
+                var hor = data.getHours();
+
+                var min = data.getMinutes();
+
+                var seg = data.getSeconds();
+
+                // Tratamento das horas
+                if (hor < 10) {
+                    hor = "0" + hor;
+                }
+
+                // Tratamento dos minutos
+                if (min < 10) {
+                    min = "0" + min;
+                }
+
+                // Tratamento dos segundos
+                if (seg < 10) {
+                    seg = "0" + seg;
+                }
+
+                /*
+                // Tratamento do dia do mês
+                if (data_dia < 10) {
+                    data_dia = "0" + data_dia;
+                }
+
+                // Tratamento do mês
+                if (mes < 10) {
+                    mes = "0" + mes;
+                }
+
+                */
+
+                // tratamento para retornar o dia da semana em string
+                switch (dia_semana) {
+                    case 0:
+                        diasemana = "Domingo";
+                        break;
+                    case 1:
+                        diasemana = "Segunda-feira";
+                        break;
+                    case 2:
+                        diasemana = "Terça-feira";
+                        break;
+                    case 3:
+                        diasemana = "Quarta-feira";
+                        break;
+                    case 4:
+                        diasemana = "Quinta-feira";
+                        break;
+                    case 5:
+                        diasemana = "Sexta-feira";
+                        break;
+                    case 6:
+                        diasemana = "Sábado";
+                        break;
+                    default:
+                        diasemana = "just now";
+                }
+
+                // Tratamento da saudação.
+                if (hor >= 6 && hor <= 12) {
+                    saudacao = "Bom dia!";
+
+                } else if (hor > 13 && hor <= 17) {
+                    saudacao = "Boa tarde!";
+
+                } else if (hor >= 18 && hor <= 23) {
+                    saudacao = "Boa noite!";
+
+                } else if (hor >= 0 && hor <= 5) {
+                    saudacao = "Boa madrugada!";
+                }
+
+                var horas = saudacao + " - " + diasemana + " - " + hor + ":" + min + ":" + seg;
+
+                document.getElementById("rel").textContent = horas;
+            }
+
+            var timer = setInterval(relogio, 1000);
+        </script>
+
+
+
+
+    </div>
+
+    <!-- HTML -->
+
+    <!-- JAVASCRIPT -->
+
+
+    <!-- JAVASCRIPT -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
