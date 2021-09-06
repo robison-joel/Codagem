@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Idade - JavasCript</title>
+
+    <link rel="stylesheet" href="style-java.css">
+
+    <style>
+        * {
+            color: #FFFFFF;
+        }
+        
+        #id_corpo {
+            background-color: #444444;
+            text-shadow: 1px 1px 1px #000000;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- HTML -->
+
+    <div class="container-fluid" id="id_corpo">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col col-6" style="text-align:right;">
+
+                    Insira aqui a sua idade:
+
+                </div>
+
+                <div class="col col-6">
+
+                    <input type="text" name="id_idade" id="id_idade" placeholder=" apenas números"> <input type="button" value="Ok" onclick="fidade()">
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- HTML -->
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        function fidade() {
+            var idade_ = document.getElementsByTagName('id_idade');
+
+            if (idade_ > 0 && idade_ <= 15) {
+                var idade = "Você é menor de idade e não pode votar ainda.";
+            } else if (idade_ >= 16 && idade_ < 18) {
+                var idade = "Você é menor de idade, mas já tem direito ao voto.";
+            } else if (idade_ >= 18 && idade_ < 65) {
+                var idade = "Você é maior de idade e é obrigado a cumprir com a obrigação eleitoral.";
+            } else if (idade_ >= 65) {
+                var idade = "Seu voto é facultativo."
+            } else if (idade_ <= 0 && idade_ > 130) {
+                var idade = "Que loucura, cara? Cê tá vivo?"
+            }
+
+            document.write(`Seu resultado é: ${idade}`)
+        }
+    </script>
+
+    <!-- JAVASCRIPT -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

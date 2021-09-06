@@ -12,7 +12,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Relógio - JavasCript</title>
+    <title>Relógio e data completos - JavasCript</title>
 
     <link rel="stylesheet" href="../style-java.css">
 
@@ -26,9 +26,14 @@
 
     <!-- HTML -->
 
-    <div class="container-fluid" id="id_relogio">
+    <div class="container-fluid">
 
-        <table>
+        <table align="center">
+            <tr>
+                <td>
+                    <p id="sauda"></p>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <p id="rel"></p>
@@ -45,15 +50,21 @@
             function relogio() {
 
                 // declaração de variáveis
-                var data = new Date();
+                var data = new Date(); // Capta os dados do SERVIDOR
 
-                var dia_semana = data.getDay();
+                var dia_semana = data.getDay(); // Obtém o DIA DA SEMANA do SERVIDOR.
 
-                var hor = data.getHours();
+                var hor = data.getHours(); // Obtém a HORA do SERVIDOR.
 
-                var min = data.getMinutes();
+                var min = data.getMinutes(); // Obtém os MINUTOS do SERVIDOR.
 
-                var seg = data.getSeconds();
+                var seg = data.getSeconds(); // Obtém os SEGUNDOS do SERVIDOR.
+
+                var dia_data = data.getDate(); // Obtém o DIA DO MES do SERVIDOR.
+
+                var mes_data = data.getMonth(); // Obtém o MES atual do SERVIDOR.
+
+                var ano_data = data.getFullYear(); // Obtém o ANO atual do SERVIDOR.
 
                 // Tratamento das horas
                 if (hor < 10) {
@@ -68,6 +79,38 @@
                 // Tratamento dos segundos
                 if (seg < 10) {
                     seg = "0" + seg;
+                }
+
+                // Tratamento dos DIAS retornados pelo SERVIDOR
+                if (dia_data < 10) {
+                    dia_data = "0" + dia_data;
+                }
+
+                // Tratamento dos MESES retornados pelo SERVIDOR
+                if (mes_data == 0) {
+                    mes_data = "Janeiro";
+                } else if (mes_data == 1) {
+                    mes_data = "Fevereiro";
+                } else if (mes_data == 2) {
+                    mes_data = "Março";
+                } else if (mes_data == 3) {
+                    mes_data = "Abril";
+                } else if (mes_data == 4) {
+                    mes_data = "Maio";
+                } else if (mes_data == 5) {
+                    mes_data = "Junho";
+                } else if (mes_data == 6) {
+                    mes_data = "Julho";
+                } else if (mes_data == 7) {
+                    mes_data = "Agosto";
+                } else if (mes_data == 8) {
+                    mes_data = "Setembro";
+                } else if (mes_data == 9) {
+                    mes_data = "Outubro";
+                } else if (mes_data == 10) {
+                    mes_data = "Novembro";
+                } else if (mes_data == 11) {
+                    mes_data = "Dezembro";
                 }
 
                 // tratamento para retornar o dia da semana em string
@@ -99,24 +142,30 @@
 
                 // Tratamento da saudação.
                 if (hor >= 6 && hor <= 12) {
-                    saudacao = "Bom dia!";
+                    saudacao = "Muito bom dia!";
 
                 } else if (hor > 13 && hor <= 17) {
-                    saudacao = "Boa tarde!";
+                    saudacao = "Tenha uma boa tarde!";
 
                 } else if (hor >= 18 && hor <= 23) {
-                    saudacao = "Boa noite!";
+                    saudacao = "Tenha uma boa noite!";
 
                 } else if (hor >= 0 && hor <= 5) {
-                    saudacao = "Boa madrugada!";
+                    saudacao = "Boa madrugada a todos!";
                 }
 
-                var horas = saudacao + " - " + diasemana + " - " + hor + ":" + min + ":" + seg;
+                var horas = hor + ":" + min + ":" + seg; // Declara o conteúdo da variável que vai retornar o relógio no html.
 
-                document.getElementById("rel").textContent = horas;
+                var datahoje = diasemana + ", " + dia_data + " de " + mes_data + " de " + ano_data; // Declara o conteúdo da variável que vai retornar a data no html.
+
+                document.getElementById("sauda").textContent = saudacao; // Envia o conteúdo da variante "horas" para o objeto html com id "rel".
+
+                document.getElementById("rel").textContent = horas; // Envia o conteúdo da variante "horas" para o objeto html com id "rel".
+
+                document.getElementById("hoje").textContent = datahoje; // Envia o conteúdo da variante "datahoje" para o objeto html com id "hoje".
             }
 
-            var timer = setInterval(relogio, 1000);
+            var timer = setInterval(relogio, 1000); // Variável que se encarrega de manter tudo atualizado segundo a segundo.
         </script>
 
 

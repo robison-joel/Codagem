@@ -16,7 +16,7 @@
 
     <title>Relógio - JavasCript</title>
 
-    <link rel="stylesheet" href="style-java.css">
+    <link rel="stylesheet" href="../style-java.css">
 
     <!-- Bootstrap CSS -->
 
@@ -30,7 +30,19 @@
 
     <div class="container-fluid" id="id_relogio">
 
-        <p id="rel"></p>
+        <table>
+            <tr>
+                <td>
+                    <p id="rel"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="hoje"></p>
+                </td>
+            </tr>
+        </table>
+
 
         <script>
             function relogio() {
@@ -71,45 +83,7 @@
                     seg = "0" + seg;
                 }
 
-                /*
-                // Tratamento do dia do mês
-                if (data_dia < 10) {
-                    data_dia = "0" + data_dia;
-                }
 
-                // Tratamento do mês
-                if (mes < 10) {
-                    mes = "0" + mes;
-                }
-
-                
-                // tratamento para retornar o dia da semana em string
-                switch (dia_semana) {
-                    case 0:
-                        diasemana = "Domingo";
-                        break;
-                        case 1:
-                            diasemana = "Segunda-feira";
-                            break;
-                            case 2:
-                                diasemana = "Terça-feira";
-                                break;
-                                case 3:
-                                    diasemana = "Quarta-feira";
-                                    break;
-                                    case 4:
-                                        diasemana = "Quinta-feira";
-                                        break;
-                                        case 5:
-                                            diasemana = "Sexta-feira";
-                                            break;
-                                            case 6:
-                                                diasemana = "Sábado";
-                                                break;
-                                                default:
-                                                    diasemana = "just now";
-                                                }
-                                                */
 
                 // Tratamento da saudação.
                 if (hor >= 6 && hor <= 12) {
