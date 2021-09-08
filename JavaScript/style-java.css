@@ -28,16 +28,17 @@
 }
 
 html {
+    background: #444;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #444;
+    background: #444;
     color: #FFF;
     font-size: 1.5em;
     background-attachment: fixed;
     background-size: 100%;
-    font-family: "Open Sans", sans-serif;
+    font-family: var(--font-ubuntu);
     z-index: 0;
 }
 
@@ -47,7 +48,55 @@ body {
     border: 0;
 }
 
+header {
+    text-align: center;
+    color: #FFFFFF;
+    background: #444;
+}
+
+section {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: var(--font-kalam);
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    background: #444;
+}
+
+footer {
+    color: #FFFFFF;
+    text-align: center;
+    background: #444;
+}
+
+#id_corpo {
+    background-color: #444;
+    color: #FFFFFF;
+}
+
+#sauda {
+    align-content: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #444;
+}
+
 #rel {
-    font-size: 1.5em;
-    width: 100%;
+    font-size: 1em;
+    align-content: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #444;
+}
+
+#hoje {
+    align-content: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #444;
 }
