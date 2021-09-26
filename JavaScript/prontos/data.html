@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <title>Data completa em Javascript</title>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formato de numero - JavasCript</title>
+
+    <link rel="stylesheet" href="../style-java.css">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- HTML -->
+
+    <!-- HTML - Cabeçalho ===========================================================================
+
+    NOME: Róbison Joel Guimarães Simon
+    QUANDO: 27/08/2021
+    OQUE? Página com Script Javascript para exibir a data atual.
+
+    ============================================================================================= -->
+
+
+
+    <div class="container-fluid" id="id_corpo">
+
+
+
+
+
+        <div class="container" id="id_data">
+
+
+            <script>
+                var now = new Date(); // atrela o tempo do servidor ao script
+
+                var dia_semana = now.getDay(); // recebe o DIA DA SEMANA
+
+                // tratamento para retornar o dia da semana em string
+                if (dia_semana == 0) {
+                    var diasemana = 'Domingo'
+
+                } else if (dia_semana == 1) {
+                    var diasemana = 'Segunda-feira'
+
+                } else if (dia_semana == 2) {
+                    var diasemana = 'Terça-feira'
+
+                } else if (dia_semana == 3) {
+                    var diasemana = 'Quarta-feira'
+
+                } else if (dia_semana == 4) {
+                    var diasemana = 'Quinta-feira'
+
+                } else if (dia_semana == 5) {
+                    var diasemana = 'Sexta-feira'
+
+                } else if (dia_semana == 6) {
+                    var diasemana = 'Sábado'
+                }
+
+                var diadata = now.getDate(); // recebe o DIA DO MÊS.
+
+                var mes_data = now.getMonth(); // recebe o MÊS em string.
+
+                if (mes_data == 0) {
+                    mesdata = 'Janeiro'
+
+                } else if (mes_data == 1) {
+                    mesdata = 'Fevereiro'
+
+                } else if (mes_data == 2) {
+                    mesdata = 'Março'
+
+                } else if (mes_data == 3) {
+                    mesdata = 'Abril'
+
+                } else if (mes_data == 4) {
+                    mesdata = 'Maio'
+
+                } else if (mes_data == 5) {
+                    mesdata = 'Junho'
+
+                } else if (mes_data == 6) {
+                    mesdata = 'Julho'
+
+                } else if (mes_data == 7) {
+                    mesdata = 'Agosto'
+
+                } else if (mes_data == 8) {
+                    mesdata = 'Setembro'
+
+                } else if (mes_data == 9) {
+                    mesdata = 'Outubro'
+
+                } else if (mes_data == 10) {
+                    mesdata = 'Novembro'
+
+                } else if (mes_data == 11) {
+                    mesdata = 'Dezembro'
+                }
+
+                var anoatual = now.getFullYear(); // recebe o ANO.
+
+                document.write(`Hoje é ${diasemana}, ${diadata} de ${mesdata} de ${anoatual}.`)
+            </script>
+
+        </div>
+
+    </div>
+
+    <!-- HTML -->
+
+    <!-- JAVASCRIPT -->
+
+    <!-- JAVASCRIPT -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
