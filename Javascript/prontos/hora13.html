@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Relógio e data completos - JavasCript</title>
+
+    <link rel="stylesheet" href="../style-java.css">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- HTML -->
+
+    <div class="container-fluid">
+
+        <table align="center">
+            <tr>
+                <td>
+                    <p id="sauda"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="rel"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="hoje"></p>
+                </td>
+            </tr>
+        </table>
+
+        <script>
+            function relogio() {
+
+                // declaração de variáveis
+                var data = new Date(); // Capta os dados do SERVIDOR
+
+                var dia_semana = data.getDay(); // Obtém o DIA DA SEMANA do SERVIDOR.
+
+                var hor = data.getHours(); // Obtém a HORA do SERVIDOR.
+
+                var min = data.getMinutes(); // Obtém os MINUTOS do SERVIDOR.
+
+                var seg = data.getSeconds(); // Obtém os SEGUNDOS do SERVIDOR.
+
+                var dia_data = data.getDate(); // Obtém o DIA DO MES do SERVIDOR.
+
+                var mes_data = data.getMonth(); // Obtém o MES atual do SERVIDOR.
+
+                var ano_data = data.getFullYear(); // Obtém o ANO atual do SERVIDOR.
+
+                // Tratamento das horas
+                if (hor < 10) {
+                    hor = "0" + hor;
+                }
+
+                // Tratamento dos minutos
+                if (min < 10) {
+                    min = "0" + min;
+                }
+
+                // Tratamento dos segundos
+                if (seg < 10) {
+                    seg = "0" + seg;
+                }
+
+                // Tratamento dos DIAS retornados pelo SERVIDOR
+                if (dia_data < 10) {
+                    dia_data = "0" + dia_data;
+                }
+
+                // Tratamento dos MESES retornados pelo SERVIDOR
+                if (mes_data == 0) {
+                    mes_data = "Janeiro";
+                } else if (mes_data == 1) {
+                    mes_data = "Fevereiro";
+                } else if (mes_data == 2) {
+                    mes_data = "Março";
+                } else if (mes_data == 3) {
+                    mes_data = "Abril";
+                } else if (mes_data == 4) {
+                    mes_data = "Maio";
+                } else if (mes_data == 5) {
+                    mes_data = "Junho";
+                } else if (mes_data == 6) {
+                    mes_data = "Julho";
+                } else if (mes_data == 7) {
+                    mes_data = "Agosto";
+                } else if (mes_data == 8) {
+                    mes_data = "Setembro";
+                } else if (mes_data == 9) {
+                    mes_data = "Outubro";
+                } else if (mes_data == 10) {
+                    mes_data = "Novembro";
+                } else if (mes_data == 11) {
+                    mes_data = "Dezembro";
+                }
+
+                // tratamento para retornar o dia da semana em string
+                switch (dia_semana) {
+                    case 0:
+                        diasemana = "Domingo";
+                        break;
+                    case 1:
+                        diasemana = "Segunda-feira";
+                        break;
+                    case 2:
+                        diasemana = "Terça-feira";
+                        break;
+                    case 3:
+                        diasemana = "Quarta-feira";
+                        break;
+                    case 4:
+                        diasemana = "Quinta-feira";
+                        break;
+                    case 5:
+                        diasemana = "Sexta-feira";
+                        break;
+                    case 6:
+                        diasemana = "Sábado";
+                        break;
+                    default:
+                        diasemana = "just now";
+                }
+
+                // Tratamento da saudação.
+                if (hor >= 6 && hor <= 12) {
+                    saudacao = "Muito bom dia!";
+
+                } else if (hor > 13 && hor <= 17) {
+                    saudacao = "Tenha uma boa tarde!";
+
+                } else if (hor >= 18 && hor <= 23) {
+                    saudacao = "Tenha uma boa noite!";
+
+                } else if (hor >= 0 && hor <= 5) {
+                    saudacao = "Boa madrugada a todos!";
+                }
+
+                var horas = hor + ":" + min + ":" + seg; // Declara o conteúdo da variável que vai retornar o relógio no html.
+
+                var datahoje = diasemana + ", " + dia_data + " de " + mes_data + " de " + ano_data; // Declara o conteúdo da variável que vai retornar a data no html.
+
+                document.getElementById("sauda").textContent = saudacao; // Envia o conteúdo da variante "horas" para o objeto html com id "rel".
+
+                document.getElementById("rel").textContent = horas; // Envia o conteúdo da variante "horas" para o objeto html com id "rel".
+
+                document.getElementById("hoje").textContent = datahoje; // Envia o conteúdo da variante "datahoje" para o objeto html com id "hoje".
+            }
+
+            var timer = setInterval(relogio, 1000); // Variável que se encarrega de manter tudo atualizado segundo a segundo.
+        </script>
+
+
+
+
+    </div>
+
+    <!-- HTML -->
+
+    <!-- JAVASCRIPT -->
+
+
+    <!-- JAVASCRIPT -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

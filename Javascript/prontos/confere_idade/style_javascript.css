@@ -1,0 +1,31 @@
+    body {
+        background: rgb(119, 118, 118);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    header {
+        text-align: center;
+        color: #FFFFFF;
+        background: rgb(119, 118, 118);
+    }
+    
+    section {
+        background-color: #FFFFFF;
+        color: #000000;
+        padding: 30px;
+        border-radius: 10px;
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.658);
+    }
+    
+    footer {
+        color: #FFFFFF;
+        text-align: center;
+        background: rgb(119, 118, 118);
+    }
+    
+    h2 {
+        text-align: center;
+        text-shadow: 2px 2px 2px #8b8989;
+    }
