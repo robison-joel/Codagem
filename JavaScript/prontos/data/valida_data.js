@@ -106,6 +106,11 @@ function data() {
 
     }
 
-    window.alert(`Hoje é dia ${dia} de ${mes} de ${ano_1}.`);
+
+    var datafinal = `Você nasceu no dia ${dia} de ${mes} de ${ano_1}.`;
+
+    var saida_ = document.getElementById('saida_').innerHTML = datafinal;
+
+
 
 }
