@@ -1,31 +1,79 @@
-    body {
-        background: rgb(119, 118, 118);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    
-    header {
-        text-align: center;
-        color: #FFFFFF;
-        background: rgb(119, 118, 118);
-    }
-    
-    section {
-        background-color: #FFFFFF;
-        color: #000000;
-        padding: 30px;
-        border-radius: 10px;
-        width: 70%;
-        margin: 0 auto;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.658);
-    }
-    
-    footer {
-        color: #FFFFFF;
-        text-align: center;
-        background: rgb(119, 118, 118);
-    }
-    
-    h2 {
-        text-align: center;
-        text-shadow: 2px 2px 2px #8b8989;
-    }
+:root {
+    background-color: #222222;
+}
+
+html {
+    background-color: #222222;
+}
+
+body {
+    background-color: #222222;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+header {
+    text-align: center;
+    color: #FFFFFF;
+    align-content: center;
+    background-color: #222222;
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+section {
+    text-align: center;
+    align-content: center;
+    background-color: #222222;
+    color: #FFFFFF;
+    width: auto;
+    padding: 5px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.658);
+}
+
+footer {
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #222222;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 2px 2px 2px #8b8989;
+    background-color: #222222;
+}
+
+.div2 {
+    border-radius: 5px;
+    background-color: #333333;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 1px #000000;
+    width: auto;
+    padding: 25px;
+    font-size: 1.5em;
+}
+
+.botao {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+input {
+    padding: 5px;
+}

@@ -34,22 +34,26 @@ function verificar() {
 
             genero = "masculino";
 
-            if (idade >= 0 && idade < 10) {
+            if (idade >= 0 && idade <= 2) {
 
-                // Menino
+                // BB Menino
+                img.setAttribute('src', 'bebe_menino.png');
+
+            } else if (idade > 3 && idade <= 10) {
+
                 img.setAttribute('src', 'menino.png');
 
-            } else if (idade < 21) {
+            } else if (idade > 10 && idade < 18) {
 
                 // Garoto
                 img.setAttribute('src', 'garoto.png');
 
-            } else if (idade < 60) {
+            } else if (idade >= 18 && idade < 60) {
 
                 // Homem
                 img.setAttribute('src', 'homem.png');
 
-            } else {
+            } else if (idade >= 60) {
 
                 // Idoso
                 img.setAttribute('src', 'homem_velho.png');
@@ -60,22 +64,26 @@ function verificar() {
 
             var genero = "feminino";
 
-            if (idade >= 0 && idade < 10) {
+            if (idade >= 0 && idade <= 2) {
 
-                // Menino
+                // BB Menino
+                img.setAttribute('src', 'bebe_menina.png');
+
+            } else if (idade > 3 && idade <= 10) {
+
                 img.setAttribute('src', 'menina.png');
 
-            } else if (idade < 21) {
+            } else if (idade > 10 && idade < 18) {
 
                 // Garoto
                 img.setAttribute('src', 'garota.png');
 
-            } else if (idade < 60) {
+            } else if (idade >= 18 && idade < 60) {
 
                 // Homem
                 img.setAttribute('src', 'mulher.png');
 
-            } else {
+            } else if (idade >= 60) {
 
                 // Idoso
                 img.setAttribute('src', 'mulher_velha.png');
