@@ -23,7 +23,7 @@ sudo apt install gimp -y
 #
 #       5- Kate (Porque eu gosto) 
 #
-#sudo apt install kate -y
+sudo apt install kate -y
 #
 #       6- Kio Grive
 #
@@ -35,11 +35,11 @@ sudo apt install kolourpaint4 -y
 #
 #       8- Ktorrent (Torrent)
 #
-#sudo apt install ktorrent -y
+sudo apt install ktorrent -y
 #
 #       9- Libreoffice
 #
-#sudo apt install libreoffice -y
+sudo apt install libreoffice -y
 #sudo apt libreoffice-l10n-ptbr -y
 #
 #      10- Net Tools
@@ -50,7 +50,7 @@ sudo apt install net-tools -y
 #
 sudo apt install samba -y
 sudo smbpasswd -a robisonjoel
-#sudo gedit /etc/sama/smb.conf
+sudo gedit /etc/sama/smb.conf
 #
 #      12- SSH
 #
@@ -80,7 +80,7 @@ sudo apt install virtualbox-ext-pack -y
 #
 #      18- VLC
 #
-#sudo apt install vlc -y
+sudo apt install vlc -y
 #
 #   Fonte externa
 #
@@ -94,9 +94,9 @@ sudo apt install virtualbox-ext-pack -y
 #
 #      23- WoeUSB
 #
-sudo add-apt-repository ppa:nilarimogard/webupd8 -y
-sudo apt update
-sudo apt install woeusb -y
+#sudo add-apt-repository ppa:nilarimogard/webupd8 -y
+#sudo apt update
+#sudo apt install woeusb -y
 #
 #      24- Contas Online
 #
