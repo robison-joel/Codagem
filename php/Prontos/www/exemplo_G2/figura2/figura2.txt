@@ -1,0 +1,6 @@
+CREATE TABLE `produto` (
+`codigo` BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`nome` VARCHAR( 20 ) NULL ,
+`estoque` BIGINT NULL ,
+`figura` VARCHAR( 100 ) NULL 
+) ENGINE = MYISAM ;
