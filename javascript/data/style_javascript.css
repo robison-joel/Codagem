@@ -1,0 +1,62 @@
+body {
+    background: rgb(119, 118, 118);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.658);
+}
+
+section {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.658);
+}
+
+footer {
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.658);
+}
+
+div {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+}
+
+.deca {
+    text-align: center;
+    padding: 5px;
+}
+
+.padrao {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.btn {
+    padding: 5px;
+    font-weight: bold;
+}
+
+#saida_ {
+    align-content: center;
+    line-height: auto;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.5em;
+}
