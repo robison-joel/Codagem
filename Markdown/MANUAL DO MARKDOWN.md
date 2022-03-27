@@ -1,4 +1,6 @@
 # MANUAL DO MARKDOWN
+
+
 <a id="menu"></a>
 
 # Índice
@@ -7,6 +9,7 @@
 * [Texto comum](#menu_textocomum);
 * [Negrito](#menu_negrito);
 * [Itálico](#menu_italico);
+* [Negrito+Itálico](#menu_negritalico);
 * [Links](#menu_links);
     * [Link direto](#menu_linkd);
     * [Link com texto](#menu_linkt);
@@ -39,7 +42,6 @@
 [volta ao menu](#menu)
 
 
-
 <a id="menu_textocomum"></a>
 # Texto comum 
 Para texto comum não é necessário nenhum caracter.
@@ -69,6 +71,16 @@ Para itálico, utiliza-se um "*" (asterísco) ou "_"(underscore).
 ~~~
 [volta ao menu](#menu)
 
+
+<a id="menu_negritalico"></a>
+# Negritálico 
+
+Para negrito e itálico juntos, utiliza-se três "*" (asteríscos) ou "_"(underscore).
+
+~~~
+***negritoitalico***
+~~~
+[volta ao menu](#menu)
 
 
 <a id="menu_links"></a>
@@ -191,8 +203,8 @@ N  | Descição      | Quantidade |
 :-:|:------------: | :---------:|
 1  | Item 1        | Muitos     |
 2  | Item 2        | Vários     |
-3  | Item 3        | Vários     |
-4  | Item 4        | Vários     |
-5  | Item 5        | Vários     |
+2  | Item 2        | Vários     |
+2  | Item 2        | Vários     |
+2  | Item 2        | Vários     |
 
 [volta ao menu](#menu)
