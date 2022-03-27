@@ -191,5 +191,8 @@ N  | Descição      | Quantidade |
 :-:|:------------: | :---------:|
 1  | Item 1        | Muitos     |
 2  | Item 2        | Vários     |
+3  | Item 3        | Vários     |
+4  | Item 4        | Vários     |
+5  | Item 5        | Vários     |
 
 [volta ao menu](#menu)
