@@ -208,3 +208,7 @@ N  | Descição      | Quantidade |
 2  | Item 2        | Vários     |
 
 [volta ao menu](#menu)
+
+
+# Fontes
+* https://markdown.net.br/sintaxe-estendida/
